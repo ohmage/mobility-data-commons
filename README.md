@@ -1,5 +1,4 @@
-Mobility Data Commons
-=====================
+# Mobility Data Commons
 
 This is a repository for publicly available anonymized and pseudo-anonymized mobility data from the ohmage Mobility 
 Android app. The Mobility app collects a data point every minute or every five minutes, depending on user preference. Each
@@ -22,30 +21,6 @@ point is represented by a JSON object that looks like this.
              {
                 "ssid":"00:15:6d:9e:d7:d8",
                 "strength":-71
-             },
-             {
-                "ssid":"00:7f:28:94:6e:c7",
-                "strength":-65
-             },
-             {
-                "ssid":"4c:60:de:29:99:ac",
-                "strength":-74
-             },
-             {
-                "ssid":"00:25:9c:52:2b:00",
-                "strength":-89
-             },
-             {
-                "ssid":"ec:1a:59:8b:57:49",
-                "strength":-92
-             },
-             {
-                "ssid":"a0:21:b7:ac:3b:62",
-                "strength":-95
-             },
-             {
-                "ssid":"00:20:a6:9c:94:7f",
-                "strength":-95
              }
           ],
           "time":1377206753497,
@@ -57,242 +32,59 @@ point is represented by a JSON object that looks like this.
              "z":-3.6320040225982666,
              "y":9.008782386779785,
              "x":0.558447539806366
-          },
-          {
-             "z":-3.6092591285705566,
-             "y":9.003395080566406,
-             "x":0.5518634915351868
-          },
-          {
-             "z":-3.6098575592041016,
-             "y":8.999804496765137,
-             "x":0.5333084464073181
-          },
-          {
-             "z":-3.6541502475738525,
-             "y":8.992621421813965,
-             "x":0.5404910445213318
-          },
-          {
-             "z":-3.6122517585754395,
-             "y":8.982446670532227,
-             "x":0.5267243981361389
-          },
-          {
-             "z":-3.584120035171509,
-             "y":8.973467826843262,
-             "x":0.5512649416923523
-          },
-          {
-             "z":-3.5883097648620605,
-             "y":8.96269416809082,
-             "x":0.6057330369949341
-          },
-          {
-             "z":-3.576937437057495,
-             "y":8.973467826843262,
-             "x":0.6428431272506714
-          },
-          {
-             "z":-3.57753586769104,
-             "y":8.96269416809082,
-             "x":0.6631938815116882
-          },
-          {
-             "z":-3.619434356689453,
-             "y":8.969876289367676,
-             "x":0.6817489266395569
-          },
-          {
-             "z":-3.641580820083618,
-             "y":8.963293075561523,
-             "x":0.6913257241249084
-          },
-          {
-             "z":-3.6314053535461426,
-             "y":8.97765827178955,
-             "x":0.6829460263252258
-          },
-          {
-             "z":-3.661332845687866,
-             "y":8.98543930053711,
-             "x":0.6554127335548401
-          },
-          {
-             "z":-3.6846764087677,
-             "y":8.987235069274902,
-             "x":0.6099228858947754
-          },
-          {
-             "z":-3.6739025115966797,
-             "y":8.991424560546875,
-             "x":0.5781996846199036
-          },
-          {
-             "z":-3.6727054119110107,
-             "y":8.978256225585938,
-             "x":0.5626373887062073
-          },
-          {
-             "z":-3.667917013168335,
-             "y":8.96269416809082,
-             "x":0.5476736426353455
-          },
-          {
-             "z":-3.647566318511963,
-             "y":8.971672058105469,
-             "x":0.5057750940322876
-          },
-          {
-             "z":-3.6373908519744873,
-             "y":8.994417190551758,
-             "x":0.5009866952896118
-          },
-          {
-             "z":-3.6122517585754395,
-             "y":9.005789756774902,
-             "x":0.5027823448181152
-          },
-          {
-             "z":-3.596689462661743,
-             "y":8.993818283081055,
-             "x":0.5410895943641663
-          },
-          {
-             "z":-3.619434356689453,
-             "y":8.965686798095703,
-             "x":0.5392939448356628
-          },
-          {
-             "z":-3.58292293548584,
-             "y":8.956708908081055,
-             "x":0.50876784324646
-          },
-          {
-             "z":-3.5883097648620605,
-             "y":8.942941665649414,
-             "x":0.5057750940322876
-          },
-          {
-             "z":-3.599083662033081,
-             "y":8.962095260620117,
-             "x":0.5147533416748047
-          },
-          {
-             "z":-3.6314053535461426,
-             "y":8.974664688110352,
-             "x":0.5171475410461426
-          },
-          {
-             "z":-3.6332011222839355,
-             "y":8.980650901794434,
-             "x":0.47405192255973816
-          },
-          {
-             "z":-3.6170401573181152,
-             "y":8.963293075561523,
-             "x":0.4926069974899292
-          },
-          {
-             "z":-3.5865142345428467,
-             "y":8.910619735717773,
-             "x":0.47884035110473633
-          },
-          {
-             "z":-3.602674961090088,
-             "y":8.93156909942627,
-             "x":0.4596867263317108
-          },
-          {
-             "z":-3.625419855117798,
-             "y":8.993818283081055,
-             "x":0.5237316489219666
-          },
-          {
-             "z":-3.644573450088501,
-             "y":9.010578155517578,
-             "x":0.5781996846199036
-          },
-          {
-             "z":-3.64577054977417,
-             "y":8.98005199432373,
-             "x":0.6500257849693298
-          },
-          {
-             "z":-3.666121244430542,
-             "y":8.99860668182373,
-             "x":0.7296329736709595
-          },
-          {
-             "z":-3.6337995529174805,
-             "y":8.992023468017578,
-             "x":0.7823054194450378
-          },
-          {
-             "z":-3.6170401573181152,
-             "y":9.00279712677002,
-             "x":0.8170213103294373
-          },
-          {
-             "z":-3.599682331085205,
-             "y":8.957905769348145,
-             "x":0.7613561153411865
-          },
-          {
-             "z":-3.6170401573181152,
-             "y":8.937555313110352,
-             "x":0.6721721291542053
-          },
-          {
-             "z":-3.6361937522888184,
-             "y":8.968679428100586,
-             "x":0.5674257874488831
-          },
-          {
-             "z":-3.603872060775757,
-             "y":8.998008728027344,
-             "x":0.5003881454467773
-          },
-          {
-             "z":-3.639785051345825,
-             "y":8.98543930053711,
-             "x":0.48722004890441895
-          },
-          {
-             "z":-3.6535518169403076,
-             "y":8.965087890625,
-             "x":0.4908113479614258
-          },
-          {
-             "z":-3.6164417266845703,
-             "y":8.968679428100586,
-             "x":0.5057750940322876
-          },
-          {
-             "z":-3.5924997329711914,
-             "y":8.974066734313965,
-             "x":0.5380968451499939
-          },
-          {
-             "z":-3.5847184658050537,
-             "y":8.979453086853027,
-             "x":0.5644330382347107
-          },
-          {
-             "z":-3.5942952632904053,
-             "y":8.959102630615234,
-             "x":0.5674257874488831
-          },
-          {
-             "z":-3.5930981636047363,
-             "y":8.957905769348145,
-             "x":0.579995334148407
-          },
-          {
-             "z":-3.5877113342285156,
-             "y":8.999205589294434,
-             "x":0.595557689666748
-          }
+          }       
        ],
        "mode":"still"
     }
+    
+## Element Dictionary
+
+<table>
+<tr><td>id</td><td>A unique integer identifier for this object given its presence in a list of other mobility data points.</td></tr>
+<tr><td>uuid</td><td>As above, but it is a UUID.</td></tr>
+<tr><td>time</td><td>The standard Unix UTC milliseconds from January 1, 1970 up to the time this point was created.</td></tr>
+<tr><td>time_offset</td><td>The number of milliseconds to convert time to the timezone where the point was collected.</td></tr>
+<tr><td>timezone</td><td>The human-readable "zoneinfo" timezone.</td></tr>
+<tr><td>location_timestamp</td><td>The timestamp at which the location was determined, which may be different than the time the point was created.</td></tr>
+<tr><td>latitude and longitude</td><td>The location of the user at the time of location_timestamp.</td></tr>
+<tr><td>location_accuracy</td><td>The distance in meters from the actual latitude-longitude coordinates with a ~90% confidence.</td></tr>
+<tr><td>location_provider</td><td>The system entity that supplied the location. The value will be either "network" or "GPS".</td></tr>
+<tr><td>wifi_data</td><td>A list of Wi-Fi access points and the time at which the access points were collected.</td></tr>
+<tr><td>scan</td><td>A list of ssid-strength pairs. Strength is a negative integer that represents stronger signal strength as it approaches zero.</td></tr>
+<tr><td>speed</td><td>The speed (not velocity) of the mobile device compared to the previous point.</td></tr>
+<tr><td>accel_data</td><td>A list of accelerometer readings.</td></tr>
+<tr><td>mode</td><td>The classified ambulatory mode based on our classification algorithm applied to this point.</td></tr>
+</table>
+
+======
+
+For filtered mobility data, the location data is not present and the Wi-Fi access points are converted into UUIDs.
+
+    {
+       "id":72247796,
+       "uid":"11c8d0da-abe0-432a-b6db-7f37a7928aae",
+       "time":1377206820239,
+       "time_offset":-14400000,
+       "time_adjusted":1377192420239,
+       "timezone":"America/New_York",
+       "wifi_data":{
+          "scan":[
+             {
+                "ssid":"11c8d0da-abe0-432a-b6db-7f37a7928aad",
+                "strength":-71
+             }
+          ],
+          "time":1377206753497,
+          "timezone":"America/New_York"
+       },
+       "speed":0,
+       "accel_data":[
+          {
+             "z":-3.6320040225982666,
+             "y":9.008782386779785,
+             "x":0.558447539806366
+          }       
+       ],
+       "mode":"still"
+    }
+
