@@ -1,9 +1,10 @@
 # Mobility Data Commons
 
 This is a repository for publicly available anonymized and pseudo-anonymized mobility data from the ohmage Mobility 
-Android app. ([source](https://github.com/ohmage/mobility-phone), [app](https://play.google.com/store/apps/details?id=org.ohmage.mobility)). 
-The Mobility app collects a data point every minute or every five minutes, depending on user preference. Each
-point is represented by a JSON object that looks like this.
+Android app ([source](https://github.com/ohmage/mobility-phone), [app](https://play.google.com/store/apps/details?id=org.ohmage.mobility)). 
+The Mobility app collects a data point every minute or every five minutes, depending on user preference. The data is available 
+as JSON or CSV. For CSV, the data includes a header row and is followed by rows containing the actual data. There is an example [here](https://github.com/ohmage/mobility-data-commons/blob/master/example/single-record-mobility.csv). 
+For JSON, each point is represented by a JSON object that looks like this.
 
     {
        "id":72247796,
