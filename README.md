@@ -84,7 +84,8 @@ point is represented by a JSON object that looks like this.
 <tr><td>scan</td><td>A list of ssid-strength pairs. Strength is a negative integer that represents stronger signal strength as it approaches zero.</td></tr>
 <tr><td>speed</td><td>The speed (not velocity) of the mobile device compared to the previous GPS reading. Can be zero if obtaining a GPS lock was unsuccessful.</td></tr>
 <tr><td>accel_data</td><td>A list of accelerometer readings. The list is typically between 30 and 50 triaxial points.</td></tr>
-<tr><td>mode</td><td>The classified ambulatory mode based on our classification algorithm applied to this point.</td></tr>
+<tr><td>mode</td><td>The classified ambulatory mode based on our classification algorithm applied to this point. The value
+will be one of still, walk, run, drive.</td></tr>
 </table>
 
 ======
