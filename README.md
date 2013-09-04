@@ -78,7 +78,9 @@ For JSON, each point is represented by a JSON object that looks like this.
 <li>WiFiGPSLocation:Network - the Wi-Fi Network scan provided the location.</li>
 <li>WiFiGPSLocation:Network - the Wi-Fi Network scan provided the location, but the value returned is from a cache of Wi-Fi scans and possibly incorrect.</li>
 </ul>
-<p>You can check out the source code for WiFiGPSLocation <a href="https://github.com/ohmage/wi-fi-gps-location">here</a>.
+<p>You can check out the source code for WiFiGPSLocation <a href="https://github.com/ohmage/wi-fi-gps-location">here</a>. Note
+that other values for location_provider are possible for this field, but the list above contains the values that are officially
+supported.</p>
 </td></tr>
 
 <tr><td>wifi_data</td><td>A list of Wi-Fi access points and the time at which the access points were collected. A typical list size is between 5 and 10 points though it can be larger.</td></tr>
@@ -86,8 +88,9 @@ For JSON, each point is represented by a JSON object that looks like this.
 <tr><td>speed</td><td>The speed (not velocity) of the mobile device compared to the previous GPS reading. Can be zero if obtaining a GPS lock was unsuccessful.</td></tr>
 <tr><td>accel_data</td><td>A list of accelerometer readings. The list is typically between 30 and 50 triaxial points.</td></tr>
 <tr><td>mode</td><td>The classified ambulatory mode based on our classification algorithm applied to this point. The value
-will be one of still, walk, run, drive.</td></tr>
-</table>
+will be one of still, walk, run, drive, or error. The error mode occurs if the classifier cannot determine the mode based on the
+data for the point.</td></tr>
+</table> 
 
 ======
 
