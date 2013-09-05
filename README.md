@@ -2,43 +2,11 @@
 
 This is a repository for publicly available anonymized and pseudo-anonymized mobility data from the ohmage Mobility 
 Android app ([source](https://github.com/ohmage/mobility-phone), [app](https://play.google.com/store/apps/details?id=org.ohmage.mobility)). 
-The Mobility app collects a data point every minute or every five minutes, depending on user preference. The data is available 
-as JSON or CSV. For CSV, the data includes a header row and is followed by rows containing the actual data. There is an example [here](https://github.com/ohmage/mobility-data-commons/blob/master/example/single-record-mobility.csv). 
-For JSON, each point is represented by a JSON object that looks like this.
+The Mobility app collects a data point every minute or every five minutes, depending on user preference. 
 
-    {
-       "id":72247796,
-       "uid":"11c8d0da-abe0-432a-b6db-7f37a7928aae",
-       "time":1377206820239,
-       "time_offset":-14400000,
-       "time_adjusted":1377192420239,
-       "timezone":"America/New_York",
-       "location_timestamp":"2013-08-22T17:27:00.239-04:00",
-       "latitude":42.4377468,
-       "longtiude":-76.4641825,
-       "location_accuracy":36.00299835205078,
-       "location:provider":"network",
-       "wifi_data":{
-          "scan":[
-             {
-                "ssid":"00:15:6d:9e:d7:d8",
-                "strength":-71
-             }
-          ],
-          "time":1377206753497,
-          "timezone":"America/New_York"
-       },
-       "speed":0,
-       "accel_data":[
-          {
-             "z":-3.6320040225982666,
-             "y":9.008782386779785,
-             "x":0.558447539806366
-          }       
-       ],
-       "mode":"still"
-    }
-    
+The data is available as CSV exports. There is a pseudo-anonymized example [here](https://github.com/ohmage/mobility-data-commons/blob/master/example/single-record-mobility.csv) and 
+a anonymized example [here](https://github.com/ohmage/mobility-data-commons/blob/master/example/single-record-mobility-filtered.csv).
+
 ## Element Dictionary
 
 <table>
@@ -91,33 +59,3 @@ supported.</p>
 will be one of still, walk, run, drive, or error. The error mode occurs if the classifier cannot determine the mode based on the
 data for the point.</td></tr>
 </table> 
-
-======
-
-For filtered mobility data, the location data (including timezone) is not present and the Wi-Fi access points are converted into UUIDs.
-
-    {
-       "id":72247796,
-       "uid":"11c8d0da-abe0-432a-b6db-7f37a7928aae",
-       "time":1377206820239,
-       "wifi_data":{
-          "scan":[
-             {
-                "ssid":"11c8d0da-abe0-432a-b6db-7f37a7928aad",
-                "strength":-71
-             }
-          ],
-          "time":1377206753497,
-          "timezone":"America/New_York"
-       },
-       "speed":0,
-       "accel_data":[
-          {
-             "z":-3.6320040225982666,
-             "y":9.008782386779785,
-             "x":0.558447539806366
-          }       
-       ],
-       "mode":"still"
-    }
-
