@@ -7,6 +7,12 @@ The Mobility app collects a data point every minute or every five minutes, depen
 The data is available as CSV exports. There is a pseudo-anonymized example [here](https://github.com/ohmage/mobility-data-commons/blob/master/example/single-record-mobility.csv) and 
 a anonymized example [here](https://github.com/ohmage/mobility-data-commons/blob/master/example/single-record-mobility-filtered.csv).
 
+The data can be found in the [data directory](https://github.com/ohmage/mobility-data-commons/tree/master/data) of this repo. Each file 
+represents one user's data. The data has been cleaned and is valid CSV and JSON, but irregularities may exist. Each file is 
+a gzipped tar archive of files that contain three month chunks of data. Very gappy three month chunks have been removed.
+
+If you have questions, feel free to put in an issue. Otherwise, clone this repo and analyze away!
+
 ## Element Dictionary
 
 <table>
