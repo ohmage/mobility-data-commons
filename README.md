@@ -8,8 +8,9 @@ The data is available as CSV exports. There is a pseudo-anonymized example [here
 a anonymized example [here](https://github.com/ohmage/mobility-data-commons/blob/master/example/single-record-mobility-filtered.csv).
 
 The data can be found in the [data directory](https://github.com/ohmage/mobility-data-commons/tree/master/data) of this repo. Each file 
-represents one user's data. The data has been cleaned and is valid CSV and JSON, but irregularities may exist. Each file is 
-a gzipped tar archive of files that contain three month chunks of data. Very gappy three month chunks have been removed.
+represents one user's data. The data has been cleaned and is valid CSV and JSON, but irregularities may exist. Each directory contains
+ gzipped tar archives that contain chunks of data for one to six month periods. Very gappy three month chunks have been removed. Each 
+ archive is roughly 50 MB or less.
 
 If you have questions, feel free to put in an issue. Otherwise, clone this repo and analyze away!
 
@@ -20,10 +21,10 @@ If you have questions, feel free to put in an issue. Otherwise, clone this repo 
 <tr><td>uuid</td><td>As above, but it is a UUID.</td></tr>
 <tr><td>time</td><td>The standard Unix UTC milliseconds from January 1, 1970 up to the time this point was created.</td></tr>
 <tr><td>time_offset</td><td>The number of milliseconds to convert time to the timezone where the point was collected.</td></tr>
-<tr><td>timezone</td><td>The human-readable "zoneinfo" timezone.</td></tr>
-<tr><td>location_timestamp</td><td>The timestamp at which the location was determined, which may be different than the time the point was created.</td></tr>
-<tr><td>latitude and longitude</td><td>The location of the user at the time of location_timestamp.</td></tr>
-<tr><td>location_accuracy</td><td>From the Android developer docs: 
+<tr><td>timezone</td><td>The human-readable "zoneinfo" timezone. May be null.</td></tr>
+<tr><td>location_timestamp</td><td>The timestamp at which the location was determined, which may be different than the time the point was created. May be null.</td></tr>
+<tr><td>latitude and longitude</td><td>The location of the user at the time of location_timestamp. May be null.</td></tr>
+<tr><td>location_accuracy</td><td>This value may be null, but if it isn't, the Android developer docs state the following. 
 
     <p>Get the estimated accuracy of this location, in meters.</p>
     
@@ -44,7 +45,7 @@ If you have questions, feel free to put in an issue. Otherwise, clone this repo 
 
     <p>If this location does not have an accuracy, then 0.0 is returned.</p></td></tr>
     
-<tr><td>location_provider</td><td>The system entity that supplied the location. The possible values are 
+<tr><td>location_provider</td><td>May be null. The system entity that supplied the location. The possible values are 
 <ul>
 <li>WifiGPSLocation:GPS - the GPS receiver.</li>
 <li>WiFiGPSLocation:Cached - a cached GPS lock from the GPS receiver.</li>
