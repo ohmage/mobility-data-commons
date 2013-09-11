@@ -9,7 +9,7 @@ a anonymized example [here](https://github.com/ohmage/mobility-data-commons/blob
 
 The data can be found in the [data directory](https://github.com/ohmage/mobility-data-commons/tree/master/data) of this repo. Each directory 
 represents one user's data. The data has been cleaned and is valid CSV and JSON, but irregularities may exist. Each directory contains
- gzipped tar archives that contain chunks of data for one to six month periods. Very gappy three month chunks have been removed. Each 
+ gzipped tar archives that contain chunks of data for one to six month periods. Very gappy time periods have been removed. Each 
  archive is roughly 50 MB or less.
 
 If you have questions, feel free to put in an issue. Otherwise, clone this repo and analyze away!
